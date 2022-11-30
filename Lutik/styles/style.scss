@@ -1,0 +1,49 @@
+@import 'variables';
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: $text;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 21px 15px;
+}
+
+.nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    &__item {
+        margin-left: 2.7rem;
+    &:first-child {
+        margin-left: 0;  
+}
+&:last-child {
+    margin-left: 3rem;
+}
+    }
+    &__link {
+        color: $text;
+        text-decoration: none;
+    }
+    &__btn {
+        font-size: 1.4rem;
+        background-color: $tomato;
+        color: $white;
+        text-decoration: none;
+    padding: 1.6rem 2.6rem;  
+    border-radius: .6rem;
+  }
+}
